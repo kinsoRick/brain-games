@@ -12,7 +12,11 @@ const evenGame = () => {
 
   while (correctAnswers < 3) {
     const number = getRandomNumber(100);
-    const isEvenNumber = (number % 2 === 0) ? 'yes' : 'no';
+    let isEvenNumber = 'no';
+
+    if (number % 2 === 0) {
+      isEvenNumber = 'yes';
+    }
 
     const answer = RLS.question(`Question: ${number}\nYour answer: `);
 
