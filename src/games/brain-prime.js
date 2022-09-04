@@ -1,6 +1,11 @@
 import playGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+/**
+ * generates numbers from 0 to 99, determines whether the number will be prime
+ * @date 2022-09-04
+ * @returns {question: number, answer: ('yes' or 'no')}
+ */
 const primeGameQA = () => {
   const number = getRandomNumber(100);
   let solution = 'yes';
