@@ -10,7 +10,7 @@ ___
 ___
 
 ## Play
-[![asciicast](https://asciinema.org/a/lkvXyN3jkBBt7LEwTu1NYrPMY.svg)](https://asciinema.org/a/lkvXyN3jkBBt7LEwTu1NYrPMY)
+[![asciicast](https://asciinema.org/a/Qk7nwTbJ9ObvQy7VHqnqJ3OUQ.svg)](https://asciinema.org/a/Qk7nwTbJ9ObvQy7VHqnqJ3OUQ)
 
 `brain-games`
 
