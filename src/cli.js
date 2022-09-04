@@ -5,7 +5,9 @@ const greeting = () => {
 
   const name = RLS.question('May I have your name? ');
 
-  return console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`);
+
+  return name;
 };
 
 export default greeting;
