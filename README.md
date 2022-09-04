@@ -15,3 +15,11 @@ ___
 `brain-games`
 
 `brain-even`
+
+`brain-calc`
+
+`brain-gcd`
+
+`brain-prime`
+
+`brain-progression`
