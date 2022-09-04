@@ -12,16 +12,14 @@ const evenGame = () => {
   let correctAnswers = 0;
   while (correctAnswers < 3) {
     const number = getRandomNumber(100);
-    const isEvenNumber = number % 2 === 0 ? 'yes' : 'no';
+    const isEvenNumber = (number % 2 === 0) ? 'yes' : 'no';
 
     const answer = RLS.question(`Question: ${number}\nYour answer: `);
 
     if (answer === isEvenNumber) {
       correctAnswers += 1;
       console.log('Correct!');
-    }
-
-    if (answer !== isEvenNumber) {
+    } else {
       correctAnswers = 0;
       console.log(`'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, ${name}!`);
     }
