@@ -1,11 +1,12 @@
 {
-  "name": "@hexlet/code",
+  "name": "brain-games-kinsorick",
   "version": "1.0.0",
   "description": "CLI games",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "brain-games": "bin/brain-games.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even":  "bin/brain-even.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +16,7 @@
     "url": "git+https://github.com/kinsoRick/frontend-project-44.git"
   },
   "author": "Masnaveev Kamil Albertovich <kmasnaveev@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kinsoRick/frontend-project-44/issues"
   },
