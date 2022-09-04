@@ -1,5 +1,5 @@
 {
-  "name": "brain-games-kinsorick",
+  "name": "@hexlet/code",
   "version": "1.0.1",
   "description": "CLI games",
   "main": "index.js",
