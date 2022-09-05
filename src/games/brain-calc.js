@@ -27,7 +27,6 @@ const calcGameQA = () => {
 
 const runCalculationGame = () => {
   playGame(
-    3,
     'What is the result of the expression?',
     calcGameQA,
   );

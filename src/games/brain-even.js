@@ -15,7 +15,6 @@ const evenGameQA = () => {
 
 const runEvenGame = () => {
   playGame(
-    3,
     'Answer "yes" if the number is even, otherwise answer "no"',
     evenGameQA,
   );

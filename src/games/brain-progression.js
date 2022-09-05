@@ -31,7 +31,6 @@ const progressionGameQA = () => {
 
 const runProgressionGame = () => {
   playGame(
-    3,
     'What number is missing in the progression?',
     progressionGameQA,
   );

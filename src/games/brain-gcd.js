@@ -25,7 +25,6 @@ const gcdGameQA = () => {
 
 const runGcdGame = () => {
   playGame(
-    3,
     'Find the greatest common divisor of given numbers',
     gcdGameQA,
   );
