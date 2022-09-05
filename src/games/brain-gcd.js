@@ -18,7 +18,7 @@ const getGcdSolution = (firstNumber, secondNumber) => {
  * @date 2022-09-04
  * @returns {question: string, answer: number.toString()}
  */
-const gcdGameQA = () => {
+const createGcdProblem = () => {
   const firstNumber = getRandomNumber(100);
   const secondNumber = getRandomNumber(100);
   const question = `${firstNumber} ${secondNumber}`;
@@ -31,7 +31,7 @@ const gcdGameQA = () => {
 const runGcdGame = () => {
   playGame(
     'Find the greatest common divisor of given numbers',
-    gcdGameQA,
+    createGcdProblem,
   );
 };
 

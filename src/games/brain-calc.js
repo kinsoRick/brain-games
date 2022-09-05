@@ -17,7 +17,7 @@ const getSolution = (operation, firstNumber, secondNumber) => {
  * @date 2022-09-04
  * @returns {question: string, answer: string}
  */
-const calcGameQA = () => {
+const createMathProblem = () => {
   const firstNumber = getRandomNumber(100);
   const secondNumber = getRandomNumber(100);
   const operationCount = operations.length;
@@ -34,7 +34,7 @@ const calcGameQA = () => {
 const runCalculationGame = () => {
   playGame(
     'What is the result of the expression?',
-    calcGameQA,
+    createMathProblem,
   );
 };
 

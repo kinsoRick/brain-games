@@ -20,13 +20,14 @@ const generateProgression = (start, step, progressionLength) => {
  * @date 2022-09-04
  * @returns {question: string, answer: number.toString()}
  */
-const progressionGameQA = () => {
+const createProgressionWithHole = () => {
   const missingPosition = getRandomNumber(10);
 
   const startNumber = getRandomNumber(20);
   const step = getRandomNumber(10) + 1;
+  const progressionLength = 10;
 
-  const progression = generateProgression(startNumber, step, 10);
+  const progression = generateProgression(startNumber, step, progressionLength);
 
   const solution = progression[missingPosition];
   progression[missingPosition] = '..';
@@ -39,7 +40,7 @@ const progressionGameQA = () => {
 const runProgressionGame = () => {
   playGame(
     'What number is missing in the progression?',
-    progressionGameQA,
+    createProgressionWithHole,
   );
 };
 
