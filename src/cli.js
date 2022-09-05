@@ -1,3 +1,3 @@
-import { greeting } from './index.js';
+import { showGreeting } from './index.js';
 
-export default greeting;
+export default showGreeting;
