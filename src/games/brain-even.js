@@ -1,6 +1,11 @@
 import playGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const isEvenNumber = (number) => {
+  if (number % 2 === 0) return 'yes';
+  return 'no';
+};
+
 /**
  * generates number, and answer is number even? ('yes' or 'no')
  * @date 2022-09-04
@@ -8,9 +13,9 @@ import getRandomNumber from '../utils.js';
  */
 const evenGameQA = () => {
   const number = getRandomNumber(100);
-  const isEvenNumber = (number % 2 === 0) ? 'yes' : 'no';
+  const answer = isEvenNumber(number);
 
-  return { question: number, answer: isEvenNumber };
+  return { question: number, answer };
 };
 
 const runEvenGame = () => {

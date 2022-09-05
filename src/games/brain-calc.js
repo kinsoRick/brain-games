@@ -3,6 +3,14 @@ import getRandomNumber from '../utils.js';
 
 const operations = ['+', '-', '*'];
 
+const getSolution = (operation, firstNumber, secondNumber) => {
+  let solution = (firstNumber * secondNumber);
+  if (operation === '+') solution = (firstNumber + secondNumber);
+  if (operation === '-') solution = (firstNumber - secondNumber);
+
+  return solution;
+};
+
 /**
  * Generates two nums and operation between them.
  * answer just solution of expression
@@ -12,17 +20,15 @@ const operations = ['+', '-', '*'];
 const calcGameQA = () => {
   const firstNumber = getRandomNumber(100);
   const secondNumber = getRandomNumber(100);
+  const operationCount = operations.length;
 
-  const operation = operations[getRandomNumber(3)];
+  // Gets random operation from operations array
+  const operation = operations[getRandomNumber(operationCount)];
   const expression = `${firstNumber.toString()} ${operation} ${secondNumber.toString()}`;
 
-  let solution = '';
+  const solution = getSolution(operation, firstNumber, secondNumber);
 
-  if (operation === '+') solution = (firstNumber + secondNumber).toString();
-  if (operation === '-') solution = (firstNumber - secondNumber).toString();
-  if (operation === '*') solution = (firstNumber * secondNumber).toString();
-
-  return { question: expression, answer: solution };
+  return { question: expression, answer: solution.toString() };
 };
 
 const runCalculationGame = () => {

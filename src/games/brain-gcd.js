@@ -1,26 +1,31 @@
 import playGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const getGcdSolution = (firstNumber, secondNumber) => {
+  let x = firstNumber;
+  let y = secondNumber;
+
+  while (x !== y) {
+    if (x > y) x -= y;
+    else y -= x;
+  }
+
+  return x;
+};
+
 /**
  * generates two numbers and the answer will be gcd between them
  * @date 2022-09-04
  * @returns {question: string, answer: number.toString()}
  */
 const gcdGameQA = () => {
-  let firstNumber = getRandomNumber(100);
-  let secondNumber = getRandomNumber(100);
-  const expression = `${firstNumber} ${secondNumber}`;
+  const firstNumber = getRandomNumber(100);
+  const secondNumber = getRandomNumber(100);
+  const question = `${firstNumber} ${secondNumber}`;
 
-  let gcd = 0;
+  const gcd = getGcdSolution(firstNumber, secondNumber);
 
-  while (firstNumber !== secondNumber) {
-    if (firstNumber > secondNumber) firstNumber -= secondNumber;
-    else secondNumber -= firstNumber;
-  }
-
-  gcd = firstNumber.toString();
-
-  return { question: expression, answer: gcd };
+  return { question, answer: gcd.toString() };
 };
 
 const runGcdGame = () => {
