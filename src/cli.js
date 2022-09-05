@@ -1,3 +1,9 @@
-import { showGreeting } from './index.js';
+import { showWelcomeMessage, showGreetingMessage, getUsername } from './index.js';
 
-export default showGreeting;
+const runWelcomeGame = () => {
+  showWelcomeMessage();
+  const username = getUsername();
+  showGreetingMessage(username);
+};
+
+export default runWelcomeGame;
