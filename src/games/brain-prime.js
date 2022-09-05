@@ -22,7 +22,7 @@ const primeGameQA = () => {
   return { question: number, answer: solution };
 };
 
-const primeGame = () => {
+const runPrimeGame = () => {
   playGame(
     3,
     'Answer "yes" if given number is prime. Otherwise answer "no".',
@@ -30,4 +30,4 @@ const primeGame = () => {
   );
 };
 
-export default primeGame;
+export default runPrimeGame;

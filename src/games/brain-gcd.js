@@ -23,7 +23,7 @@ const gcdGameQA = () => {
   return { question: expression, answer: gcd };
 };
 
-const gcdGame = () => {
+const runGcdGame = () => {
   playGame(
     3,
     'Find the greatest common divisor of given numbers',
@@ -31,4 +31,4 @@ const gcdGame = () => {
   );
 };
 
-export default gcdGame;
+export default runGcdGame;

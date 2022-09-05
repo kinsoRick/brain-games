@@ -29,7 +29,7 @@ const progressionGameQA = () => {
   return { question: expression, answer: solution.toString() };
 };
 
-const progressionGame = () => {
+const runProgressionGame = () => {
   playGame(
     3,
     'What number is missing in the progression?',
@@ -37,4 +37,4 @@ const progressionGame = () => {
   );
 };
 
-export default progressionGame;
+export default runProgressionGame;

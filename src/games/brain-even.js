@@ -13,7 +13,7 @@ const evenGameQA = () => {
   return { question: number, answer: isEvenNumber };
 };
 
-const evenGame = () => {
+const runEvenGame = () => {
   playGame(
     3,
     'Answer "yes" if the number is even, otherwise answer "no"',
@@ -21,4 +21,4 @@ const evenGame = () => {
   );
 };
 
-export default evenGame;
+export default runEvenGame;

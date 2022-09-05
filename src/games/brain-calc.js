@@ -25,7 +25,7 @@ const calcGameQA = () => {
   return { question: expression, answer: solution };
 };
 
-const calculationGame = () => {
+const runCalculationGame = () => {
   playGame(
     3,
     'What is the result of the expression?',
@@ -33,4 +33,4 @@ const calculationGame = () => {
   );
 };
 
-export default calculationGame;
+export default runCalculationGame;

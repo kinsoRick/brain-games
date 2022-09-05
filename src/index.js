@@ -1,6 +1,6 @@
 import RLS from 'readline-sync';
 
-export const greeting = () => {
+export const showGreeting = () => {
   console.log('Welcome to the Brain Games!');
 
   const name = RLS.question('May I have your name? ');
@@ -11,7 +11,7 @@ export const greeting = () => {
 };
 
 const playGame = (countOfRounds, gameRules, getQA) => {
-  const name = greeting();
+  const name = showGreeting();
   console.log(gameRules);
 
   let correctAnswers = 0;
