@@ -16,16 +16,16 @@
 Shows the greeting to the player
 
 `brain-even`
-A random number is shown. And he has to answer yes if the number is even, or no if it is odd.
+A random number is shown. The player has to answer yes if the number is even, or no if it is odd.
 
 `brain-calc`
 shows a random mathematical expression, for example 35 + 16, which you have to calculate and write down the correct answer.
 
 `brain-gcd`
-two random numbers are shown, e.g., 25 50. The user has to calculate and enter the greatest common divisor of these numbers.
+two random numbers are shown, e.g., 25 50. The player has to calculate and enter the greatest common divisor of these numbers.
 
 `brain-progression`
-Show the player a series of numbers that form an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
+Shows a series of numbers that form an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.
 
 `brain-prime`
 Show the player a number. The player must determine if it is a prime number.
