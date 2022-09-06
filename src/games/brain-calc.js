@@ -3,12 +3,17 @@ import getRandomNumber from '../utils.js';
 
 const operations = ['+', '-', '*'];
 
-const getSolution = (operation, firstNumber, secondNumber) => {
-  let solution = (firstNumber * secondNumber);
-  if (operation === '+') solution = (firstNumber + secondNumber);
-  if (operation === '-') solution = (firstNumber - secondNumber);
-
-  return solution;
+const calculate = (operation, firstNumber, secondNumber) => {
+  switch (operation) {
+    case '+':
+      return firstNumber + secondNumber;
+    case '-':
+      return firstNumber - secondNumber;
+    case '*':
+      return firstNumber * secondNumber;
+    default:
+      throw new Error('unexpected operation value given');
+  }
 };
 
 /**
@@ -20,15 +25,14 @@ const getSolution = (operation, firstNumber, secondNumber) => {
 const createMathProblem = () => {
   const firstNumber = getRandomNumber(100);
   const secondNumber = getRandomNumber(100);
-  const operationCount = operations.length;
 
   // Gets random operation from operations array
-  const operation = operations[getRandomNumber(operationCount)];
-  const expression = `${firstNumber.toString()} ${operation} ${secondNumber.toString()}`;
+  const operation = operations[getRandomNumber(operations.length)];
+  const question = `${firstNumber.toString()} ${operation} ${secondNumber.toString()}`;
 
-  const solution = getSolution(operation, firstNumber, secondNumber);
+  const answer = calculate(operation, firstNumber, secondNumber);
 
-  return { question: expression, answer: solution.toString() };
+  return { question, answer: answer.toString() };
 };
 
 const runCalculationGame = () => {
