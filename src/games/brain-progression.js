@@ -28,12 +28,12 @@ const createProgressionWithHole = () => {
 
   const progression = generateProgression(startNumber, step, progressionLength);
 
-  const solution = progression[missingPosition];
+  const answer = progression[missingPosition];
   progression[missingPosition] = '..';
 
   const expression = progression.join(' ');
 
-  return { question: expression, answer: solution.toString() };
+  return { question: expression, answer: answer.toString() };
 };
 
 const runProgressionGame = () => {
