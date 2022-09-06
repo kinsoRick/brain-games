@@ -16,7 +16,7 @@ const isPrimeNumber = (number) => {
  * @date 2022-09-04
  * @returns {question: number, answer: ('yes' or 'no')}
  */
-const createPrimeQuestion = () => {
+const createPrimeTask = () => {
   const number = getRandomNumber(100);
   const answer = (isPrimeNumber(number) === true) ? 'yes' : 'no';
 
@@ -26,7 +26,7 @@ const createPrimeQuestion = () => {
 const runPrimeGame = () => {
   playGame(
     'Answer "yes" if given number is prime. Otherwise answer "no".',
-    createPrimeQuestion,
+    createPrimeTask,
   );
 };
 

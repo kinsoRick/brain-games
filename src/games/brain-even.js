@@ -8,7 +8,7 @@ const isEvenNumber = (number) => number % 2 === 0;
  * @date 2022-09-04
  * @returns {question: number, answer: ('yes' or 'no')}
  */
-const createEvenQuestion = () => {
+const createEvenTask = () => {
   const number = getRandomNumber(100);
   const answer = isEvenNumber(number) ? 'yes' : 'no';
 
@@ -18,7 +18,7 @@ const createEvenQuestion = () => {
 const runEvenGame = () => {
   playGame(
     'Answer "yes" if the number is even, otherwise answer "no"',
-    createEvenQuestion,
+    createEvenTask,
   );
 };
 
