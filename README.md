@@ -33,8 +33,8 @@ Show the player a number. The player must determine if it is a prime number.
 [![asciicast](https://asciinema.org/a/Qk7nwTbJ9ObvQy7VHqnqJ3OUQ.svg)](https://asciinema.org/a/Qk7nwTbJ9ObvQy7VHqnqJ3OUQ)
 
 ## Requirements
-- Windows, Linux
-- NodeJS, npm
+- Windows or Linux
+- NodeJS => v16.13.2, npm
 
 ## Install
 
