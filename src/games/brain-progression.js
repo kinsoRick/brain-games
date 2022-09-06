@@ -3,11 +3,10 @@ import getRandomNumber from '../utils.js';
 
 const generateProgression = (start, step, progressionLength) => {
   const progression = [];
-  let number = start;
+  const lastProgressionNumber = start + step * (progressionLength - 1);
 
-  for (let i = 0; i < progressionLength; i += 1) {
+  for (let number = start; number < lastProgressionNumber; number += step) {
     progression.push(number);
-    number += step;
   }
 
   return progression;
