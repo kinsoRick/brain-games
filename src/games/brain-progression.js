@@ -5,7 +5,7 @@ const generateProgression = (start, step, progressionLength) => {
   const progression = [];
   const lastProgressionNumber = start + step * (progressionLength - 1);
 
-  for (let number = start; number < lastProgressionNumber; number += step) {
+  for (let number = start; number <= lastProgressionNumber; number += step) {
     progression.push(number);
   }
 
