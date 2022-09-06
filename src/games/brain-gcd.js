@@ -1,7 +1,7 @@
 import playGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const getGcdSolution = (firstNumber, secondNumber) => {
+const getGcd = (firstNumber, secondNumber) => {
   let x = firstNumber;
   let y = secondNumber;
 
@@ -23,7 +23,7 @@ const createGcdProblem = () => {
   const secondNumber = getRandomNumber(100);
   const question = `${firstNumber} ${secondNumber}`;
 
-  const gcd = getGcdSolution(firstNumber, secondNumber);
+  const gcd = getGcd(firstNumber, secondNumber);
 
   return { question, answer: gcd.toString() };
 };
