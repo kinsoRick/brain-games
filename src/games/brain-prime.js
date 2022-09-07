@@ -18,7 +18,7 @@ const isPrimeNumber = (number) => {
  */
 const createPrimeTask = () => {
   const number = getRandomNumber(100);
-  const answer = (isPrimeNumber(number) === true) ? 'yes' : 'no';
+  const answer = isPrimeNumber(number) ? 'yes' : 'no';
 
   return { question: number, answer };
 };

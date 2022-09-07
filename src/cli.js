@@ -1,9 +1,10 @@
-import { showWelcomeMessage, showGreetingMessage, getUsername } from './index.js';
+import RLS from 'readline-sync';
 
 const runWelcomeGame = () => {
-  showWelcomeMessage();
-  const username = getUsername();
-  showGreetingMessage(username);
+  console.log('Welcome to the Brain Games!');
+
+  const name = RLS.question('May I have your name? ');
+  console.log(`Hello, ${name}!`);
 };
 
 export default runWelcomeGame;

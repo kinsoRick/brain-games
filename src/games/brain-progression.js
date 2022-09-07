@@ -20,11 +20,11 @@ const generateProgression = (start, step, progressionLength) => {
  * @returns {question: string, answer: number.toString()}
  */
 const createProgressionWithHole = () => {
-  const missingPosition = getRandomNumber(10);
+  const progressionLength = 10;
+  const missingPosition = getRandomNumber(progressionLength);
+  const step = getRandomNumber(progressionLength) + 1;
 
   const startNumber = getRandomNumber(20);
-  const step = getRandomNumber(10) + 1;
-  const progressionLength = 10;
 
   const progression = generateProgression(startNumber, step, progressionLength);
 
