@@ -28,7 +28,7 @@ const createMathTask = () => {
 
   // Gets random operation from operations array
   const operation = operations[getRandomNumber(operations.length)];
-  const question = `${firstNumber.toString()} ${operation} ${secondNumber.toString()}`;
+  const question = `${firstNumber} ${operation} ${secondNumber}`;
 
   const answer = calculate(operation, firstNumber, secondNumber);
 
